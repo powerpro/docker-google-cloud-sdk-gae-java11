@@ -2,7 +2,7 @@
 # PROPERTIES
 ###############################################################################
 REPO = powerpro
-NAME = google-cloud-sdk-gae-java8
+NAME = google-cloud-sdk-gae-java11
 VERSION ?= latest
 
 .PHONY: default

@@ -22,3 +22,14 @@ workflows:
           filters:
             branches:
               ignore: gh-pages
+weekly:
+    triggers:
+      - schedule:
+          # This project is rarely updated so run a weekly build.
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
